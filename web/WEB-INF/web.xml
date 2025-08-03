@@ -136,6 +136,10 @@
         <servlet-name>FinishCourseServlet</servlet-name>
         <servlet-class>Controller.coach.FinishCourseServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SavingsCalculatorServlet</servlet-name>
+        <servlet-class>Controller.SavingsCalculatorServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/LoginServlet</url-pattern>
@@ -279,6 +283,10 @@
     <servlet-mapping>
         <servlet-name>FinishCourseServlet</servlet-name>
         <url-pattern>/FinishCourseServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SavingsCalculatorServlet</servlet-name>
+        <url-pattern>/SavingsCalculatorServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

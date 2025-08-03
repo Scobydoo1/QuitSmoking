@@ -139,6 +139,7 @@
         </div>
 
         <!-- Welcome Section -->
+        
         <div class="welcome">
             <div class="container">
                 <div class="row">
@@ -160,6 +161,22 @@
                 </div>
             </div>
         </div>
+        <!-- Thêm đoạn này vào homepage.jsp sau Welcome Section -->
+<div class="savings-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-8 text-center">
+                <div class="savings-card">
+                    <h3 class="savings-title">💰 Tính Toán Tiền Tiết Kiệm</h3>
+                    <p class="savings-desc">Xem bạn đã tiết kiệm được bao nhiều tiền khi cai thuốc lá!</p>
+                    <a href="SavingsCalculator" class="btn btn-savings">
+                        <i class="fas fa-calculator"></i> Tính Ngay
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
         <%
             SystemDao dao = new SystemDao();
