@@ -1,0 +1,455 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 2, 2025, 9:56:52 PM
+    Author     : thanh
+*/
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #e3fbe3;
+}
+.main-bg {
+    min-height: 100vh;
+    background: #e3fbe3;
+    width: 100%;
+}
+
+/* HEADER */
+.custom-header {
+    width: 100%;
+    max-width: 1100px;
+    margin: 32px auto 24px auto;
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 8px 32px rgba(39, 174, 96, 0.13);
+    padding: 0 0 10px 0;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 54px 0 54px;
+    font-size: 1.15rem;
+    color: #388e3c;
+    border-bottom: 1px solid #e0e0e0;
+    background: #fff;
+}
+
+.header-info span {
+    margin-right: 30px;
+    color: #388e3c;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 1.13em;
+}
+
+.header-info i {
+    color: #27ae60;
+    margin-right: 3px;
+}
+
+.header-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #145a32;
+    font-weight: 600;
+    background: #e8f5e9;
+    padding: 12px 28px;
+    border-radius: 24px;
+    font-size: 1.18rem;
+}
+
+.header-user i {
+    color: #27ae60;
+    font-size: 1.23em;
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 54px 0 54px;
+    background: #fff;
+}
+
+.header-logo .logo-text {
+    font-size: 2.7rem;
+    font-weight: 900;
+    color: #27ae60;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 65%;
+}
+.header-nav li {
+    flex: 1 1 0;
+    text-align: center;
+}
+.header-nav li a {
+    display: block;
+    padding: 12px 0;
+    color: #222;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.27rem;
+    border-radius: 10px;
+    transition: background 0.2s, color 0.2s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.5px;
+}
+.header-nav li a:hover,
+.header-nav li a.active {
+    background: #e8f5e9;
+    color: #27ae60;
+}
+
+/* FORM */
+.main-container {
+    max-width: 950px;   /* Tăng từ 720px lên 950px */
+    margin: 0 auto;
+    padding: 32px 0;
+}
+
+.form-card {
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 8px 32px rgba(39, 174, 96, 0.13);
+    padding: 56px 80px 44px 80px;  /* Tăng padding ngang */
+    margin-top: 32px;
+    animation: fadeInUp 0.7s;
+}
+
+.form-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap: 20px;
+}
+.form-title-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.form-title-text {
+    font-size: 2.1rem;
+    font-weight: 900;
+    color: #27ae60;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    white-space: nowrap;
+}
+.icon-circle {
+    width: 40px;
+    height: 40px;
+    background: #27ae60;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4em;
+}
+.member-id {
+    background: #e8f5e9;
+    color: #145a32;
+    padding: 7px 22px;
+    border-radius: 18px;
+    font-size: 1.18rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    white-space: nowrap;
+}
+
+.desc {
+    margin-bottom: 28px;
+    color: #6c757d;
+    font-size: 1.18rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.count-badge {
+    background: #27ae60;
+    color: #fff;
+    padding: 7px 18px;
+    border-radius: 18px;
+    font-weight: bold;
+    margin-right: 12px;
+    font-size: 1.18rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+}
+
+.question-form {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.plan-section {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+}
+
+.plan-label {
+    font-weight: 700;
+    color: #222;
+    margin-right: 18px;
+    font-size: 1.18rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.plan-radio {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.13rem;
+    cursor: pointer;
+}
+
+.plan-radio input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+}
+
+.plan-custom {
+    width: 22px;
+    height: 22px;
+    border: 2px solid #27ae60;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+    background: #fff;
+}
+
+.plan-radio input[type="radio"]:checked + .plan-custom {
+    background: #27ae60;
+    box-shadow: 0 0 0 3px #c8e6c9;
+}
+
+#questions {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.question-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: #f8f9fa;
+    border-radius: 14px;
+    padding: 18px 18px;
+    box-shadow: 0 2px 8px rgba(39, 174, 96, 0.06);
+    position: relative;
+    animation: fadeInUp 0.5s;
+    opacity: 1;
+    transition: background 0.2s, opacity 0.5s;
+}
+
+.question-item label {
+    min-width: 100px;
+    font-weight: 600;
+    color: #27ae60;
+    font-size: 1.13rem;
+}
+
+.question-item input[type="text"] {
+    flex: 1;
+    padding: 12px 20px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1.13rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.question-item input[type="text"]:focus {
+    border-color: #27ae60;
+    outline: none;
+    background: #f1fff1;
+}
+
+.remove-btn {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.remove-btn:hover {
+    background: #c0392b;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 0;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1.23rem;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 8px;
+    width: 100%;
+    justify-content: center;
+    background: #2ecc71;
+    color: #fff;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.add-btn {
+    background: #2ecc71;
+}
+.add-btn:hover {
+    background: #27ae60;
+    transform: translateY(-2px);
+}
+.submit-btn {
+    background: #27ae60;
+    margin-top: 0;
+}
+.submit-btn:hover {
+    background: #43a047;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 1300px) {
+    .custom-header {
+        max-width: 99vw;
+    }
+    .header-main, .header-top {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media (max-width: 900px) {
+    .main-container, .form-card {
+        max-width: 99vw;
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    .custom-header {
+        max-width: 99vw;
+    }
+    .header-main, .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .header-nav {
+        width: 100%;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 8px;
+    }
+    .header-user {
+        margin-top: 8px;
+    }
+}
+@media (max-width: 600px) {
+    .form-card {
+        padding: 10px 2px 10px 2px;
+    }
+    .main-container {
+        padding: 2px;
+    }
+    .plan-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .header-main, .header-top {
+        padding: 5px 2px;
+    }
+    .form-title-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .form-title-text {
+        font-size: 1.2rem;
+    }
+    .member-id {
+        font-size: 1rem;
+        padding: 5px 12px;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from { opacity: 0; -webkit-transform: translateY(30px);}
+    to { opacity: 1; -webkit-transform: translateY(0);}
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+.form-card, .question-item {
+    -webkit-animation: fadeInUp 0.7s;
+    animation: fadeInUp 0.7s;
+}
+
+.progress-section {
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ 
+.main-container .question-form .progress-section label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #2e7d32; /* Xanh lá đậm */
+}
+
+.main-container .question-form .progress-section textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #a5d6a7; /* Xanh lá nhạt */
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+    resize: vertical;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #f9fff9;
+}
+
+.main-container .question-form .progress-section textarea:focus {
+    border-color: #4CAF50; /* Xanh lá chủ đạo */
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2); /* Hiệu ứng xanh lá khi focus */
+}
+
+.main-container .question-form .progress-section textarea::placeholder {
+    color: #99cc99;
+}

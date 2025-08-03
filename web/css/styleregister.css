@@ -1,0 +1,68 @@
+body {
+    background-color: #e8f5e9; /* Xanh lá nhạt nền */
+    font-family: Arial, sans-serif;
+}
+
+.register-form {
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 500px;
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 128, 0, 0.1);
+}
+
+.inner-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #28a745; /* Xanh lá đậm */
+    font-weight: bold;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #2e7d32;
+}
+
+.form-control {
+    border: 1px solid #c8e6c9; /* Viền xanh lá nhạt */
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #66bb6a;
+}
+
+.btn-green {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-green:hover {
+    background-color: #388e3c;
+}
+
+.register-form .inner-form .inner-form-gender {
+    display: flex;
+    gap: 20px;
+}
+/* CSS cho thông báo lỗi */
+.error-message {
+    color: red; /* Màu chữ đỏ cho thông báo lỗi */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* CSS cho thông báo thành công */
+.success-message {
+    color: green; /* Màu chữ xanh cho thông báo thành công */
+    font-weight: bold;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,181 @@
+/* === General Blog Styles === */
+
+.blog-section {
+    padding: 50px 0;
+    background: linear-gradient(135deg, #e8f5e8 0%, #f1f8e9 100%);
+}
+
+.blog-container {
+    max-width: 950px; /* Increased width for the new layout */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #2e7d32;
+}
+
+/* === Blog Action Buttons (inside banner) === */
+.inner-blog {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.home-page a {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 0 10px;
+    border: 2px solid white;
+    backdrop-filter: blur(5px);
+}
+
+.home-page a:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #28a745;
+    transform: translateY(-3px);
+}
+
+
+/* === Blog List (Corrected Horizontal Layout) === */
+.blog-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Space between blog posts */
+}
+
+.blog-list-item {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    background-color: transparent; /* Nền trong suốt để giống màu nền trang */
+    padding: 20px;
+    border: 1px solid #ccc; /* Đường viền đen mỏng, bạn có thể dùng #000 cho màu đen đậm
+hơn */
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-list-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Hiệu ứng đổ bóng nhẹ khi di chuột */
+}
+
+.blog-list-item-img {
+    flex: 0 0 45%;
+    max-width: 400px;
+}
+
+.blog-list-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.blog-list-item-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blog-list-item-meta {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.author-avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 8px;
+    object-fit: cover;
+}
+
+.blog-list-item-meta span {
+    margin-right: 10px;
+}
+
+.blog-list-item-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
+    text-decoration: none;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+.blog-list-item-title:hover {
+    color: #28a745;
+}
+
+.blog-excerpt {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.blog-list-item-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #999;
+}
+
+.blog-stats span {
+    margin-right: 15px;
+}
+
+.blog-likes {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.blog-likes i {
+    color: #e74c3c;
+}
+
+/* === Blog Detail (No changes needed, kept for consistency) === */
+.blog-detail-container { max-width: 800px; margin: 40px auto; background-color: #fff; padding: 40px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+.detail-title { font-size: 40px; font-weight: 700; color: #2e7d32; margin-bottom: 20px; line-height: 1.3; }
+.detail-meta { margin-bottom: 30px; color: #666; font-size: 16px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+.detail-meta span { margin-right: 20px; }
+.detail-meta i { margin-right: 8px; color: #28a745; }
+.detail-hero-image { width: 100%; height: auto; border-radius: 12px; margin-bottom: 30px; }
+.detail-content { font-size: 18px; line-height: 1.8; color: #333; }
+.detail-content p { margin-bottom: 20px; }
+.detail-actions { margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
+.btn-back, .btn-report { background-color: #6c757d; color: white; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: 500; transition: background-color 0.3s ease; }
+.btn-report { background-color: #dc3545; }
+.btn-back:hover { background-color: #5a6268; }
+.btn-report:hover { background-color: #c82333; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .blog-list-item {
+        flex-direction: column;
+    }
+    .blog-list-item-img {
+        flex: 0 0 250px;
+        height: 250px;
+        max-width: 100%;
+    }
+}

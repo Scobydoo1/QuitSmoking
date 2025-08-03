@@ -1,0 +1,162 @@
+/* updatePost.css */
+/* Author: DELL | Last Updated: 14-Jul-2025 */
+
+/* Reset body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4fff5;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header */
+h2 {
+    color: #228B22;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #2ecc71;
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+
+/* Form container */
+form {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 18px rgba(0, 128, 0, 0.15);
+}
+
+/* Group spacing */
+.form-group {
+    margin-bottom: 20px;
+}
+
+strong{
+    color: #2e7d32;
+}
+/* Labels */
+label {
+    font-weight: bold;
+    color: #2e7d32;
+    display: block;
+    margin-bottom: 6px;
+}
+
+/* Input and textarea */
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c8e6c9;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9fff9;
+    transition: border 0.3s;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+    border-color: #81c784;
+    outline: none;
+}
+
+/* File input */
+input[type="file"] {
+    margin-top: 10px;
+}
+
+/* Image preview */
+img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Buttons & Links */
+button,
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button {
+    background-color: #66bb6a;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4caf50;
+    transform: translateY(-2px);
+}
+
+
+
+/* Center align for error message */
+.text-danger {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+/* Optional container styling if needed */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 4px #a5d6a7;
+}
+.home-button {
+    position: fixed; /* Cố định vị trí */
+    top: 20px; /* Cách mép trên 20px */
+    left: 20px; /* Cách mép trái 20px */
+    background-color: #28a745; /* Màu xanh lá chủ đạo */
+    color: white; /* Màu chữ */
+    padding: 10px 20px; /* Khoảng cách bên trong nút */
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: bold; /* Chữ đậm */
+    border: none; /* Không viền */
+    border-radius: 8px; /* Bo góc */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển động */
+    z-index: 999; /* Hiển thị trên cùng */
+}
+
+.home-button:hover {
+    background-color: #218838; /* Màu đậm hơn khi hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Đổ bóng tăng khi hover */
+    transform: scale(1.05); /* Hi?u ?ng phóng to nh? */
+    text-decoration: underline; /* G?ch chân khi hover */
+}

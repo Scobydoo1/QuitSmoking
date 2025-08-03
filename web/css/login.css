@@ -1,0 +1,188 @@
+/* Login */
+.login {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+.inner-login {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.inner-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Input label */
+label {
+    font-weight: 600;
+    color: #555555;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+/* Input */
+.inner-input input,
+.inner-option {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 5px;
+    font-size: 16px;
+    outline: 0; 
+    background-color: #fff;
+}
+
+.login .inner-login .form-login .inner-button {
+    margin-top: 20px;
+    text-align: center;
+}
+.login .inner-login .form-login .inner-button .button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.login .inner-login .form-login .inner-button .button:hover {
+    background-color: #337ab7;
+}
+
+/* Checkbox + Forgot Password */
+.inner-options .item-name {
+    margin: 0;
+    padding: 0;
+}
+
+.login .inner-login .inner-box .form-login .inner-options {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.login .inner-login .inner-box .form-login .inner-options a {
+    color: #28a745;
+}
+
+.login .inner-login .inner-box .form-login .inner-options a:hover {
+    text-decoration: underline;
+}
+/* End login */
+
+/* Sign Up */
+.welcome {
+    background: #28a745;
+    border-radius: 12px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome .inner-welcome {
+    width: 100%;
+    text-align: center;
+}
+
+.welcome .inner-welcome .inner-title-welcome {
+    font-size: 26px;
+    color: #fff;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.welcome .inner-welcome .inner-sub-title {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.welcome .inner-welcome .inner-button .button {
+    background: #fff;
+    padding: 10px 30px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.welcome .inner-welcome .inner-button-admin{
+    margin-top: 40px;
+}
+
+.welcome .inner-welcome .inner-button-admin .button {
+    background: #c0c0c0;
+    padding: 10px 30px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.welcome .inner-welcome .inner-button-admin .button:hover {
+    background-color: #ccc;
+    transition: background-color 0.3s ease;
+}
+
+.welcome .inner-welcome .inner-button .button:hover {
+    background-color: #ccc;
+    transition: background-color 0.3s ease;
+}
+/* End Sign Up */
+
+
+.error-message {
+
+    color: red;
+
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+/* Home Button */
+.home-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px; 
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.home-button:hover {
+    background-color: #218838;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    text-decoration: none;
+    color: #000;
+}

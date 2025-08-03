@@ -1,0 +1,64 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 17, 2025, 6:14:56 PM
+    Author     : Thinkpad
+*/
+/* blog-detail.css */
+
+.blog-detail-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.blog-detail-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.blog-detail-meta {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.blog-detail-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.blog-detail-content {
+    white-space: pre-wrap;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #6c757d;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+}
+

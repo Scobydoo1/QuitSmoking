@@ -1,0 +1,237 @@
+
+
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 10, 2025, 1:39:39 PM
+    Author     : Nghia
+*/
+
+/* ==== General Reset & Font ==== */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #93a59d;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ==== Header ==== */
+.header {
+    background: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.header .inner-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .inner-title {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.header .inner-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    color: #757575;
+}
+
+.header .inner-contact a {
+    text-decoration: none;
+    color: #757575;
+    transition: color 0.3s ease;
+}
+
+.header .inner-contact a:hover {
+    color: #28a745;
+}
+
+/* ==== Menu ==== */
+.menu {
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #ddd;
+}
+
+.menu .inner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu .inner-logo a {
+    color: #232323;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu .inner-list {
+    margin-left: 100px;
+}
+
+.menu .inner-list ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.menu .inner-list ul li a {
+    display: inline-block;
+    padding: 35px 20px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.menu .inner-list ul li a:hover {
+    background: #f0f0f0;
+    color: #28a745;
+}
+
+.menu .inner-button .button {
+    margin-right: 15px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    background-color: #28a745;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.menu .button-one:hover {
+    background-color: #356b42;
+}
+
+
+.menu .button-two:hover {
+    background-color: #356b42;
+}
+
+/* ==== About Us Blur Section ==== */
+.about-us-blur {
+    position: relative;
+    background: url('../images/aboutUs/sto.png') no-repeat center center/cover;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.about-us-blur::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+.about-us-blur .overlay {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    max-width: 700px;
+    padding: 1rem;
+}
+
+.about-us-blur h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.about-us-blur p {
+    font-size: 1.25rem;
+}
+
+/* ==== Mission & Story ==== */
+.mission, .story {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    background-color: #fff;
+    margin: 2rem 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+
+
+.mission .image, .story .image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.mission img, .story img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.mission .content, .story .content {
+    flex: 2;
+    text-align: left;
+    color: #368749;
+}
+
+.mission ol {
+    padding-left: 1.2rem;
+}
+
+.mission li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* ==== Footer ==== */
+
+/* ==== Responsive ==== */
+@media screen and (max-width: 768px) {
+    .menu .inner-header,
+    .mission,
+    .story {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu .inner-list {
+        margin-left: 0;
+    }
+
+    .menu .inner-button {
+        margin-top: 10px;
+    }
+}
+

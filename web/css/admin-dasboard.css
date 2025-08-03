@@ -1,0 +1,149 @@
+body {
+    background-color: #f0f2f5;
+    margin: 0;
+    display: flex;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    width: 250px;
+    background: #28a745;
+    color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+}
+
+.sidebar-header {
+    padding: 20px;
+    text-align: center;
+    background: #28a745;
+    border-bottom: 1px solid #fff;
+}
+
+.sidebar-header h3 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.sidebar-nav {
+    padding: 20px 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.sidebar-nav li a {
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, padding-left 0.3s;
+}
+
+.sidebar-nav li a:hover {
+    background-color: #34495e;
+    padding-left: 20px;
+}
+
+.sidebar-nav li a i {
+    margin-right: 15px;
+    text-align: center;
+}
+
+/* End Sidebar Navigation */
+
+/* Logout */
+.logout {
+    padding: 20px;
+    border-top: 1px solid #fff;
+}
+
+.logout .btn-logout {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logout .btn-logout:hover {
+    background-color: #c0392b;
+}
+
+/* End Logout */
+
+/* Main Content */
+.main-content {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 40px;
+    flex: 1;
+    margin-left: 250px;
+}
+
+.content-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content-header p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.dashboard-cards {
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 50px;
+    text-align: center;
+    min-width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    text-decoration: none;
+}
+
+.card i {
+    font-size: 40px;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.card h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    font-size: 22px;
+}
+/* End Main Content */

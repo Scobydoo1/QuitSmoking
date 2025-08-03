@@ -1,0 +1,301 @@
+.container {
+    max-width: 1200px;
+    
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #27ae60;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+/* Results Section Styling - Màu Xanh Lá */
+.results-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(39, 174, 96, 0.3);
+    text-align: center;
+    color: white;
+    margin-bottom: 70px;
+}
+
+.results-icon {
+    font-size: 64px;
+    margin-bottom: 20px;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.results-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.completion-message {
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+.score-display {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 30px 0;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.score-label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    opacity: 0.9;
+    display: block;
+}
+
+.score-value {
+    font-size: 36px;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Action Buttons - Màu Xanh Lá */
+.action-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-retake {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+}
+
+.btn-retake:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.8);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: white;
+}
+
+.btn-home {
+    background: white;
+    color: #27ae60;
+    border: 2px solid white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-home:hover {
+    background: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: #27ae60;
+}
+
+/* Question Block Styling - Accent Xanh Lá */
+.question-block {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #27ae60;
+    transition: all 0.3s ease;
+}
+
+.question-block:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+    border-left-color: #2ecc71;
+}
+
+.question-block p {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.answer-option {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+    padding: 12px 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.answer-option:hover {
+    background-color: #f0fff4;
+    border-color: #27ae60;
+    transform: translateX(5px);
+}
+
+.answer-option label {
+    font-size: 1em;
+    color: #495057;
+    margin-left: 12px;
+    cursor: pointer;
+    flex: 1;
+    font-weight: 500;
+}
+
+.answer-option input[type="radio"] {
+    margin-right: 12px;
+}
+
+.answer-option input[type="radio"]:checked + label {
+    color: #27ae60;
+    font-weight: 600;
+}
+
+.btn-submit {
+    background-color: #28a745; /* Màu xanh lá đậm */
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.2);
+}
+
+.btn-submit:hover {
+    background-color: #45a049; /* Màu sáng hơn khi hover */
+    transform: translateY(-2px);
+}
+
+.btn-submit:active {
+    background-color: #3e8e41; /* Màu khi nhấn */
+    transform: translateY(0);
+}
+
+
+
+@keyframes spin {
+    from { transform: translateY(-50%) rotate(0deg); }
+    to { transform: translateY(-50%) rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .results-container {
+        margin: 20px;
+        padding: 30px 20px;
+    }
+    
+    .results-title {
+        font-size: 24px;
+    }
+    
+    .score-value {
+        font-size: 28px;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-retake,
+    .btn-home {
+        width: 100%;
+        max-width: 250px;
+        justify-content: center;
+    }
+    
+    .question-block {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .submit-btn {
+        width: 100%;
+        max-width: 320px;
+        padding: 18px 40px;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    
+    .answer-option {
+        padding: 10px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 2em;
+    }
+    
+    .submit-btn {
+        padding: 16px 30px;
+        font-size: 16px;
+        min-width: 250px;
+    }
+    
+    .question-block p {
+        font-size: 1.1em;
+    }
+}
+
+/* Animation cho question blocks */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.question-block {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.question-block:nth-child(1) { animation-delay: 0.1s; }
+.question-block:nth-child(2) { animation-delay: 0.2s; }
+.question-block:nth-child(3) { animation-delay: 0.3s; }
+.question-block:nth-child(4) { animation-delay: 0.4s; }
+.question-block:nth-child(5) { animation-delay: 0.5s; }

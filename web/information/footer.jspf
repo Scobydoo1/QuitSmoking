@@ -1,0 +1,48 @@
+<%@ page pageEncoding="UTF-8" %>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- Thông tin về trung tâm -->
+            <div class="col-xl-4">
+                <div class="inner-footer">
+                    <h4 class="inner-title">
+                        TRUNG TÂM HỖ TRỢ CAI NGHIỆN THUỐC LÁ
+                    </h4>
+                    <p class="inner-desc">
+                        Chúng tôi cam kết đồng hành cùng bạn trên hành trình bỏ thuốc. Với đội ngũ chuyên gia tận tâm và các chương trình hỗ trợ hiệu quả, sức khỏe của bạn luôn là ưu tiên hàng đầu của chúng tôi.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Thông tin liên hệ -->
+            <div class="col-xl-4">
+                <div class="inner-footer">
+                    <h4 class="inner-title title-two">
+                        LIÊN HỆ
+                    </h4>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>0369 640 433</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:tiendatntse181844@gmail.com">tiendatntse181844@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Thời gian làm việc -->
+            <div class="col-xl-4">
+                <div class="inner-footer">
+                    <h4 class="inner-title title-two">GIỜ LÀM VIỆC</h4>
+                    <ul class="hours-list">
+                        <li>Thứ 2 – Chủ nhật: 06:00 – 22:00</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>

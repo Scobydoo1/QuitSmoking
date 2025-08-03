@@ -1,0 +1,99 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16-Jul-2025, 18:57:34
+    Author     : DELL
+*/
+
+/* report.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0fff4;
+    margin: 0;
+    padding: 40px;
+    color: #2d4739;
+}
+
+h2 {
+    color: #228B22;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 128, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+select, input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #fafff9;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #2ecc71;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #27ae60;
+    transform: translateY(-2px);
+}
+
+p {
+    text-align: center;
+    font-weight: 500;
+}
+.home-button {
+    position: fixed; /* C? ??nh v? trí */
+    top: 20px; /* Cách mép trên 20px */
+    left: 20px; /* Cách mép trái 20px */
+    background-color: #28a745; /* Màu xanh lá ch? ??o */
+    color: white; /* Màu ch? */
+    padding: 10px 20px; /* Kho?ng cách bên trong nút */
+    font-size: 16px; /* Kích th??c ch? */
+    font-weight: bold; /* Ch? ??m */
+    border: none; /* Không vi?n */
+    border-radius: 8px; /* Bo góc */
+    text-decoration: none; /* Lo?i b? g?ch chân */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ?? bóng nh? */
+    transition: all 0.3s ease; /* Hi?u ?ng chuy?n ??ng */
+    z-index: 999; /* Hi?n th? trên cùng */
+}
+
+.home-button:hover {
+    background-color: #218838; /* Màu ??m h?n khi hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* ?? bóng t?ng khi hover */
+    transform: scale(1.05); /* Hi?u ?ng phóng to nh? */
+    text-decoration: none;
+}

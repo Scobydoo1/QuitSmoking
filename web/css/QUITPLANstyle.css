@@ -1,0 +1,207 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #93a59d; /* Đồng bộ với About Us */
+    color: #333;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.plan-content {
+    display: flex;
+    flex-wrap: nowrap; /* Đảm bảo ảnh và chi tiết không bị xuống dòng */
+    gap: 20px;
+    align-items: flex-start;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.plan-image {
+    position: sticky;
+    top: 20px; /* Đảm bảo khoảng cách từ đỉnh */
+    flex: 1 1 40%;
+    max-width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.plan-image:hover {
+    transform: scale(1.05);
+}
+
+.plan-details {
+    flex: 1 1 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+
+.plan-description {
+    font-size: 1.1rem;
+    text-align: justify;
+    line-height: 1.8;
+    color: #368749;
+}
+
+.plan-details h3 {
+    font-size: 1.6rem;
+    color: #368749; /* Màu nhấn từ About Us */
+    margin-bottom: 10px;
+    border-left: 4px solid #368749;
+    padding-left: 10px;
+}
+
+.plan-details ul {
+    list-style-type: disc;
+    margin-left: 30px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #368749;
+}
+
+.plan-price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #368749; /* Màu nhấn từ About Us */
+    margin-top: 20px;
+}
+
+.btn-register {
+    max-width: 250px;
+    padding: 12px 25px;
+    background: #368749; /* Màu nhấn từ About Us */
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background 0.3s, box-shadow 0.3s;
+    margin-top: 20px;
+}
+
+.btn-register:hover {
+    background: #2c6b3d; /* Màu hover đậm hơn */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+/* Footer Styles */
+.footer {
+    background-color: #003c35;
+    padding: 60px 20px;
+    color: #ffffff;
+}
+
+.footer .inner-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer .inner-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer .inner-desc {
+    font-size: 15px;
+    color: #bdbdbd;
+    margin-bottom: 0;
+}
+
+.footer .contact-list, .footer .hours-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .contact-list li,
+.footer .hours-list li {
+    font-size: 15px;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.footer .contact-list i {
+    margin-right: 10px;
+    color: #28a745;
+    font-size: 18px;
+}
+
+/* ==== Responsive ==== */
+@media screen and (max-width: 768px) {
+    .menu .inner-header,
+    .mission,
+    .story {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu .inner-list {
+        margin-left: 0;
+    }
+
+    .menu .inner-button {
+        margin-top: 10px;
+    }
+}
+
+.course-info {
+    width: 350px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+
+.label {
+    font-weight: 500;
+    color: #606060;
+    font-size: 14px;
+}
+
+.value {
+    background-color: #f1f8ff;
+    color: #007bff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+}
