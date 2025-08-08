@@ -53,9 +53,7 @@ public class SavingsCalculationDAO {
     }
 
     public double calculateSavings(int cigarettesPerDay, double pricePerPack, int cigarettesPerPack, int daysSinceQuit) {
-        // Tính số gói thuốc tiêu thụ mỗi ngày
         double packsPerDay = (double) cigarettesPerDay / cigarettesPerPack;
-        // Tính tổng tiền tiết kiệm
         return packsPerDay * pricePerPack * daysSinceQuit;
     }
 }

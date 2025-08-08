@@ -566,7 +566,7 @@ body {
 }
 
 .btn-savings {
-    background: linear-gradient(45deg, #28a745, #20c997);
+    background: linear-gradient(45deg, #27ae60, #2ecc71);
     border: none;
     padding: 18px 50px;
     border-radius: 50px;
@@ -599,7 +599,7 @@ body {
 }
 
 .btn-savings:hover {
-    background: linear-gradient(45deg, #218838, #1e7d53);
+    background: linear-gradient(45deg, #219a52, #1e8449);
     transform: translateY(-3px);
     box-shadow: 
         0 12px 35px rgba(40, 167, 69, 0.4),

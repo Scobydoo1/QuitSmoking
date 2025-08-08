@@ -161,7 +161,7 @@
                 </div>
             </div>
         </div>
-        <!-- Thêm đoạn này vào homepage.jsp sau Welcome Section -->
+        <!-- Calculation section -->
 <div class="savings-section">
     <div class="container">
         <div class="row justify-content-center">

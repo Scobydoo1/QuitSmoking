@@ -50,27 +50,23 @@ public class SavingsCalculatorServlet extends HttpServlet {
         }
 
         try {
-            // Lấy dữ liệu từ form
+
             int cigarettesPerDay = Integer.parseInt(request.getParameter("cigarettesPerDay"));
             double pricePerPack = Double.parseDouble(request.getParameter("pricePerPack"));
             int cigarettesPerPack = Integer.parseInt(request.getParameter("cigarettesPerPack"));
             int daysSinceQuit = Integer.parseInt(request.getParameter("daysSinceQuit"));
 
             SavingsCalculationDAO dao = new SavingsCalculationDAO();
-
-            // Tính toán số tiền tiết kiệm
+            
             double totalSaved = dao.calculateSavings(cigarettesPerDay, pricePerPack, cigarettesPerPack, daysSinceQuit);
 
-            // Lưu vào database
             SavingsCalculation calc = new SavingsCalculation(userId, cigarettesPerDay, pricePerPack,
                     cigarettesPerPack, daysSinceQuit, totalSaved);
             dao.saveSavingsCalculation(calc);
 
-            // Gửi kết quả về JSP
             request.setAttribute("totalSaved", totalSaved);
             request.setAttribute("calculation", calc);
 
-            // Lấy lịch sử cập nhật
             List<SavingsCalculation> history = dao.getSavingsHistoryByMember(userId);
             request.setAttribute("savingsHistory", history);
 
